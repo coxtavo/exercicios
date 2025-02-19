@@ -11,21 +11,15 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		float a = sc.nextFloat();
-	
-	   for (int i=0; i<a; i++) {
-		 float x = sc.nextFloat();
-		 float y = sc.nextFloat();
-		 if (y == 0) {
-			 System.out.println("divisao impossivel");
-		 }
-		 else {
-		 float divisao = x / y;
-		 System.out.printf("%.1f%n", divisao);
-		 }
-	   }
-	   
-	   sc.close();
+		
+	int N = sc.nextInt();
+	int soma = 1;
+		for (int i=1; i<=N; i++) {		
+			soma *=i;
+		}
+		System.out.println(soma);
+	  
+		sc.close();
       }   
 	}
 
