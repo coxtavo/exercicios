@@ -1,0 +1,35 @@
+
+import java.util.Scanner;
+
+
+public class Main {
+    
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+
+	int maior = 0;
+	int ordem = 1;
+	int x;
+				
+		for (int i = 1; i <= 10; i++) {		
+           x = sc.nextInt();
+           if (i == 1) {
+        	   maior = x;
+        	   ordem = 1;
+           }
+           else if (x > maior) {
+        	   maior = x;
+        	   ordem = i;
+           }
+		}
+		System.out.println(maior);
+		System.out.println(ordem);
+
+		
+	
+	  
+		sc.close();
+      }   
+	}
