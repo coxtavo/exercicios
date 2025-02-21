@@ -1,0 +1,111 @@
+package curso_programacao;
+
+import java.util.Scanner;
+
+public class Main {
+    
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+       int nota = sc.nextInt();
+       int resto;
+       int troco;
+       
+       System.out.println(nota);
+       
+       troco = nota / 100;
+       System.out.println(troco + " nota(s) de R$ 100,00");
+       
+       troco = nota % 100;
+       resto = troco / 50;
+       System.out.println(resto + " nota(s) de R$ 50,00");
+       
+       troco = nota % 100;
+       resto = troco % 50;
+       resto = resto / 20;
+       System.out.println(resto + " nota(s) de R$ 20,00");
+       
+      troco = nota % 100;
+      resto = troco % 50;
+      resto = resto % 20;
+      resto = resto / 10;
+      System.out.println(resto + " nota(s) de R$ 10,00");
+      
+      troco = nota % 100;
+      resto = troco % 50;
+      resto = resto % 20;
+      resto = resto % 10;
+      resto = resto / 5;
+      System.out.println(resto + " nota(s) de R$ 5,00");
+
+      troco = nota % 100;
+      resto = troco % 50;
+      resto = resto % 20;
+      resto = resto % 5;
+      resto = resto / 2;
+      System.out.println(resto + " nota(s) de R$ 2,00");
+      
+      troco = nota % 100;
+      resto = troco % 50;
+      resto = resto % 20;
+      resto = resto % 5;
+      resto = resto % 2;
+      resto = resto / 1;
+      System.out.println(resto + " nota(s) de R$ 1,00");
+		
+sc.close();
+      }   
+	}
+//////// ou
+import java.util.Scanner;
+
+//nao esqueca de mudar o nome da classe para Main
+public class uri1018 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		int N, quociente, resto, nota;
+		
+		N = sc.nextInt();
+		System.out.println(N);
+
+		resto = N;
+
+		nota = 100;
+		quociente = resto / nota;
+		System.out.println(quociente + " nota(s) de R$ " + nota + ",00");
+	    resto = resto % nota;
+
+		nota = 50;
+		quociente = resto / nota;
+		System.out.println(quociente + " nota(s) de R$ " + nota + ",00");
+	    resto = resto % nota;
+
+		nota = 20;
+		quociente = resto / nota;
+		System.out.println(quociente + " nota(s) de R$ " + nota + ",00");
+	    resto = resto % nota;
+
+		nota = 10;
+		quociente = resto / nota;
+		System.out.println(quociente + " nota(s) de R$ " + nota + ",00");
+	    resto = resto % nota;
+
+		nota = 5;
+		quociente = resto / nota;
+		System.out.println(quociente + " nota(s) de R$ " + nota + ",00");
+	    resto = resto % nota;
+
+		nota = 2;
+		quociente = resto / nota;
+		System.out.println(quociente + " nota(s) de R$ " + nota + ",00");
+	    resto = resto % nota;
+
+		System.out.println(resto + " nota(s) de R$ 1,00");
+
+		sc.close();
+	}
+}
