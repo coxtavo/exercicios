@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+    
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		 
+		while (x > 0 && y > 0) {
+			int maior = x;
+			int menor = y;
+			if (y > x) {
+				maior = y;
+				menor = x;
+			}		
+		int soma = 0;
+			for (int i=menor ;i <=maior; i++) {
+				System.out.print(i + " ");
+				soma = soma + i;
+			}
+			System.out.println("Sum=" + soma);
+			x = sc.nextInt();
+			y = sc.nextInt();
+		}
+		sc.close();
+      }   
+	}
