@@ -1,0 +1,33 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+    
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+	
+		int N = sc.nextInt();
+		double soma = 0;
+		double quociente = 0;
+		
+		double [] vet = new double [N];
+		
+		for (int i=0; i<N; i++) {
+			vet [i] = sc.nextDouble();
+			soma = soma + vet [i];
+		}
+		
+		quociente = soma / N;
+		System.out.println(quociente);
+		
+		for (int i=0; i<N; i++) {
+			if (vet [i] < quociente) {
+				System.out.println(vet [i]);
+			}
+		}
+		
+		sc.close();
+      }   
+	}
